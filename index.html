@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Encriptador/Desencrptador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+        <title>Cifrado</title>
+    </head>
+    <body>
+        <h1><center><i> Challenge </i></center></h1>
+        <input type="text" id="textoEncriptado">
+        <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+        <button type="button" id="botonEncriptado">Encrypt</button>
+        <button type="button" id="botonDesencriptado">Decrypt</button>
+        <button type="button" id="botonCopiar">Copy</button>
+    </body>
+    <script>
+        var btn = document.querySelector("#botonEncriptado");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector("#botonDesencriptado");
+        btn2.onclick = desencriptar;
+        var btn3 = document.querySelector("#botonCopiar");
+        btn3.onclick = copiar;
+    </script>
+</html>
